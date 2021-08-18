@@ -150,9 +150,9 @@ img {
 
 section.outras-noticias {
     background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
-    padding: 30px 20px;
+    padding: 200px 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 
@@ -160,6 +160,7 @@ section.outras-noticias h2 {
     font-size: 40px;
     margin: 10px;
     color: rgb(6, 41, 241);
+    
 }
 
 .ultimas {
@@ -214,7 +215,8 @@ section.outras-noticias h2 {
     text-align: left;
     color: #788591;
     margin-top: 10px;
-    padding: 30px;
+    padding: 10px;
+    margin-left: 20px;
     letter-spacing: 1.3px;
 }
 
@@ -245,12 +247,12 @@ section.outras-noticias h2 {
 }
 
 .mais-lidas-noticia-single img {
-    width: 35%;
+    width: 50%;
     border-radius: 5px;
 }
 
 .mais-lidas-noticia-single  .text-mais-lidas-single {
-    width: 65%;
+    width: 50%;
     padding: 0 20px;
 }
 
@@ -263,7 +265,7 @@ section.outras-noticias h2 {
 .text-mais-lidas-single p {
     color: #788591;
     font-size: 15px;
-    padding: 5PX;
+    padding: 5px;
     text-align: left;
 }
 
@@ -311,6 +313,7 @@ section.noticia {
     border-radius: 10px;
     width: 58%;
     margin-right: 2%;
+    margin-left: 20%;
 }
 
 .noticia-single h2 {
@@ -340,9 +343,9 @@ section.noticia {
 
 @media screen and (max-width: 768px) {
     .noticia-single {
-        width: 100%;
+        width: 98%;
         align-items: center;
-        margin-left: 10px;
+        margin-left: 4px;
     }
     .logo,.form-busca {
         text-align: center;   
@@ -357,15 +360,53 @@ section.noticia {
         font-size: 20px;
         margin: 20px 0;
     }
-    .mais-lidas,.ultimas {
+
+    .tittle-outras-noticias {
+         padding:0;
+    }
+    .mais-lidas,
+    .ultimas {
         width: 100%;
-        margin-top: 15px;
-        margin-bottom: 15px;    
+        margin-top: 10px;
+           
+    }
+
+    .mais-lidas h4 {
+        font-size: 17px;
+       line-height: 15px;
+    }
+
+    .mais-lidas > p {
+        padding-left: 5px;
+    }
+
+    .mais-lidas img {
+       width: 100%;
+    }
+
+    .mais-lidas h4 {
+        margin-top: 10px;
+    }
+
+    .mais-lidas p {
+        width: 100%;
+        line-height: 20px;
+        
     }
 
     .box-ultimas-single {
         width: 100%;
         margin-right: 0;
-        margin-top: 15px;
+        margin-top: 17px;
+     
     }
+    .box-ultimas-single p {
+        margin-top: 20px;
+
+    }    
+    .text-mais-lidas-single p {
+       padding: 5px;
+       text-align: left;
+    }
+
 }

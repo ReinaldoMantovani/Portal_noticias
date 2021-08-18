@@ -49,7 +49,7 @@ app.get('/', (req,res)=> {
     
     
 
-      Posts.find({}).sort({'views': -1}).limit(3).exec(function(err,postsTop){
+      Posts.find({}).sort({'views': -1}).limit(4).exec(function(err,postsTop){
 
         postsTop = postsTop.map(function(val) {
             return {
@@ -70,7 +70,7 @@ app.get('/', (req,res)=> {
 
     }else{
       Posts.find({titulo: {$regex: req.query.busca,$options:"i"}},function(err,posts){
-        console.log(posts);
+    
         posts = posts.map(function(val) {
           return {
              titulo: val.titulo,
@@ -98,7 +98,7 @@ app.get('/:slug',(req,res)=> {
 
       if(resposta != null) {
 
-        Posts.find({}).sort({'views': -1}).limit(3).exec(function(err,postsTop){
+        Posts.find({}).sort({'views': -1}).limit(4).exec(function(err,postsTop){
 
         postsTop = postsTop.map(function(val) {
           return {
