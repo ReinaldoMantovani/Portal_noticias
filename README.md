@@ -2,7 +2,7 @@
 # <h4>Este projeto e inspirado na série Supernatural ♡</h4>
 # <p>Construí com base em meus conhecimentos.</p>
 ------*-----*----*----*-----*----*----*------
-<h3>
+<h3 style="display:block;">
 # HTML
 # CSS
 # JAVASCRIPT
